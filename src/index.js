@@ -3,12 +3,7 @@ import { getWeather, getCurrentWeather } from './js/weather-api';
 const body = document.body;
 const weatherContainerRef = body.querySelector('.weather');
 
-navigator.geolocation.getCurrentPosition(
-  successCallback,
-  (errorCallback = e => {
-    console.log('Geolocation is not supported by this browser.');
-  })
-);
+navigator.geolocation.getCurrentPosition(successCallback);
 
 async function successCallback(position) {
   // renderCurrentLocation(currentLatitude, currentLongitude);
