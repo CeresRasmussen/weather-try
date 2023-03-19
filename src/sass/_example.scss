@@ -7,22 +7,46 @@
   max-width: 960px;
   padding: 16px;
 }
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+body {
+  padding: 15px;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.weather {
+  width: 288px;
+  height: 469px;
+  background: #4440f7;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  padding-top: 37px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__temperature {
+    font-size: 55px;
+    line-height: 64px;
+  }
+  &__state {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__location {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__btn {
+    background: rgba(254, 254, 255, 0.3);
+    border-radius: 10px;
+    // font-family: 'Roboto';
+    font-style: normal;
+    line-height: 19px;
+
+    color: #ffffff;
+    display: block;
+    height: 34px;
+    width: 151px;
+  }
 }
