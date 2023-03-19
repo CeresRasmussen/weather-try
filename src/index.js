@@ -32,10 +32,10 @@ function renderCurrentWeather(data) {
   console.log('weatherContainerRef:', { weatherContainerRef });
 }
 
-// function renderCurrentLocation(latitude, longitude) {
-//   body.insertAdjacentHTML(
-//     'beforeend',
-//     `<p>Latitude: ${latitude} </p>
-// <p>Latitude: ${longitude}</p>`
-//   );
-// }
+function renderCurrentLocation(latitude, longitude) {
+  body.insertAdjacentHTML(
+    'beforeend',
+    `<p>Latitude: ${latitude} </p>
+<p>Latitude: ${longitude}</p>`
+  );
+}
